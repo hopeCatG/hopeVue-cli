@@ -2,10 +2,26 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<title>呔！妖怪</title>
+		<style>
+			*,
+			*::before,
+			*::after{
+				/*所有的标签，和伪元素都选中*/
+				margin: 0;
+				padding: 0;
+				/*移动端常用布局是非固定像素*/
+				/*盒子的width从border开始算*/
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				/*点击高亮效果的清除*/
+				tap-highlight-color: transparent;
+				-webkit-tap-highlight-color: transparent;
+			}
+		</style>
 	</head>
-	<body>
+	<body style="max-width: 1024px;margin: 0 auto;">
 		<div id="app">
 			
 		</div>
