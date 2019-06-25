@@ -12,6 +12,15 @@
 			return {
 				title:"全局组件注册成功！"
 			}
+		},
+		mounted () {
+			this.name()
+			
+		},
+		methods: {
+			name() {
+				console.log('将数据已经装载到了DOM之上,可以操作DOM')
+			}
 		}
 	}
 </script>

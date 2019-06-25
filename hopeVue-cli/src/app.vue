@@ -21,6 +21,15 @@
 			return {
 				text:"呔！妖怪！项目给你搭建好了"
 			}
+		},
+		mounted () {
+			this.name()
+			
+		},
+		methods: {
+			name() {
+				console.log('将数据已经装载到了DOM之上,可以操作DOM')
+			}
 		}
 	}
 </script>
